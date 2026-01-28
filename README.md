@@ -2,6 +2,7 @@
 Solutions for lecture exercises in DAT390
 
 ## File Structure
+```
 DAT390-lecture-exercises/
 ├── README.md
 ├── Lecture 2
@@ -17,3 +18,4 @@ DAT390-lecture-exercises/
 │   └── exercise 2
 └── Lecture 5
     └── exercise 1
+```
