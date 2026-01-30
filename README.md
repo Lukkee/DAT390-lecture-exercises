@@ -12,7 +12,7 @@ DAT390-lecture-exercises/
 │   └── exercise 4      - finished
 ├── Lecture 3
 │   ├── exercise 1      - finished
-│   └── exercise 2
+│   └── exercise 2      - finished
 ├── Lecture 4
 │   ├── exercise 1
 │   └── exercise 2
