@@ -1,0 +1,43 @@
+###############################################################################
+# Lecture 03 - Example 01
+# ============================================================================
+# The C standard library (which this program links against) provides the 
+# functions: 
+# 
+# int putchar(int c) - Prints the ASCII character corresponding to c.
+#                      Returns -1 on error, otherwise returns the character 
+#                      printed.
+# 
+# int rand(void) - Returns a pseudo-random integer in the range 0 to 32767
+#
+# ============================================================================
+# Write a program that continually renders random, lower case, letters to 
+# the console. 
+# 
+# You need to connect a console to USART1 in the simulator.
+###############################################################################
+.section .text
+.global main
+
+# These lines tell the assembler that these functions are defined elsewhere
+.extern putchar
+.extern rand
+
+write_random_char:
+    mv      t2, ra          # t2 <- return address
+    call    rand            # a0 <- psuedo-random number
+    li      t0, 26          # t0 <- 26
+    rem     a0, a0, t0      # a0 <- (a0 mod t0)
+    addi    a0, a0, 97      # a0 <- a0 && 'a'
+    call    putchar
+
+    mv      ra, t2          # ra <- t2
+    ret
+
+
+main:
+# Infinite loop
+.loop:
+    call    write_random_char
+    j       .loop   
+    ret
