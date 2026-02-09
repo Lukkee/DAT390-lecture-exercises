@@ -44,7 +44,8 @@ loop:
     li a0, 0
 
     iteration_loop:
-        call    set_led
+        # call    set_led
+        call    bshr_led
         call    delay
         call    clear_led
         call    delay
@@ -156,3 +157,8 @@ clear_led:
     
     sh t1, 0(t0)
     ret
+
+bshr_led:
+    mv t2, a0
+    la t0, 0x40011410    # GPIO_D_BSHR
+    sh t2, 0(t0)       # Set only bit 2 (leave the others as they are)
