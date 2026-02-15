@@ -1,7 +1,7 @@
 # DAT390 Lecture exercises
 Solutions for lecture exercises in DAT390
 
-## notes
+## Notes
 The solutions for lecture 4 and 5 are done before
 a few bugs were patched, this means that they
 contain a few self-made bugfixes within the main.c files
@@ -24,7 +24,10 @@ DAT390-lecture-exercises/
 │   └── exercise 2      - finished
 ├── Lecture 5
 │   └── exercise 1      - finished
-└──Lecture 6
-    ├── exercise 1      - finished
+├── Lecture 6
+│   ├── exercise 1      - finished
+│   └── exercise 2      - finished
+└── Lecture 7
+    ├── exercise 1
     └── exercise 2
 ```
