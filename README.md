@@ -29,5 +29,5 @@ DAT390-lecture-exercises/
 │   └── exercise 2      - finished
 └── Lecture 7
     ├── exercise 1      - finished
-    └── exercise 2
+    └── exercise 2      - finished
 ```
