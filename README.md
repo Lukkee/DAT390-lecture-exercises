@@ -7,6 +7,11 @@ a few bugs were patched, this means that they
 contain a few self-made bugfixes within the main.c files
 that tests the assignment code.
 
+*Lecture 8, exercise 1 isn't working properly,
+likely due to a simulator bug that hasn't been
+patched yet at the time of writing meaning that
+it isn't possible to write to SR.
+
 ## File Structure
 ```
 DAT390-lecture-exercises/
@@ -27,7 +32,11 @@ DAT390-lecture-exercises/
 ├── Lecture 6
 │   ├── exercise 1      - finished
 │   └── exercise 2      - finished
-└── Lecture 7
-    ├── exercise 1      - finished
-    └── exercise 2      - finished
+├── Lecture 7
+│   ├── exercise 1      - finished
+│   └── exercise 2      - finished
+├── Lecture 8
+│   └── exercise 1      - finished *
+└── Lecture 9
+    └── exercise 1
 ```
